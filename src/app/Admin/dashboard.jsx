@@ -4,7 +4,7 @@ import { UsersIcon, FolderIcon, ExclamationCircleIcon, ArchiveIcon } from '@hero
 
 const Dashboard = () => {
   return (
-    <div className='mobile text-sm lg:ml-64 ml-16 md:ml-64'>
+    <div className='mobile min-h-screen text-sm lg:ml-64 ml-16 md:ml-64'>
       <Navbar />
       <div className='font-bold'>
         <h1 className='pt-5 mb-3 pl-1 text-xl'>Dashboard</h1>
