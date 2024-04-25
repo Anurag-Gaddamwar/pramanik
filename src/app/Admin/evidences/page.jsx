@@ -153,45 +153,46 @@ const Page = () => {
         {/* Evidences content */}
         <div className='bg-white p-4 shadow-md rounded-lg'>
           {/* Evidences list */}
-          <div className='overflow-x-auto'>
-            <table className='min-w-full divide-y divide-gray-200'>
-              {/* Table headers */}
-              <thead className='bg-gray-50'>
-                <tr>
-                  <th>ID</th>
-                  <th>Category</th>
-                  <th>Description</th>
-                  <th>Uploaded By</th>
-                  <th>Upload Date</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              {/* Table body */}
-              <tbody className='bg-white divide-y divide-gray-200'>
-                {/* Render evidence data */}
-                {currentItems.map((evidence) => (
-                  <tr key={evidence.id}>
-                    <td>{evidence.id}</td>
-                    <td>{evidence.category}</td>
-                    <td>{evidence.description}</td>
-                    <td>{evidence.uploadedBy}</td>
-                    <td>{evidence.uploadDate}</td>
-                    <td>
-                      {evidence.actions.map((action, index) => (
-                        <button
-                          key={index}
-                          className='text-indigo-600 hover:text-indigo-900 mr-2'
-                          onClick={() => action.action === 'View' ? handleViewEvidence(evidence.id) : handleDeleteEvidence(evidence.id)}
-                        >
-                          {action.action}
-                        </button>
-                      ))}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+<div className='overflow-x-auto'>
+  <table className='min-w-full divide-y divide-gray-200'>
+    {/* Table headers */}
+    <thead className='bg-gray-50'>
+      <tr>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>ID</th>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>Category</th>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>Description</th>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>Uploaded By</th>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>Upload Date</th>
+        <th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>Actions</th>
+      </tr>
+    </thead>
+    {/* Table body */}
+    <tbody className='bg-white divide-y divide-gray-200'>
+      {/* Render evidence data */}
+      {currentItems.map((evidence) => (
+        <tr key={evidence.id}>
+          <td className='px-6 py-4 whitespace-nowrap'>{evidence.id}</td>
+          <td className='px-6 py-4 whitespace-nowrap'>{evidence.category}</td>
+          <td className='px-6 py-4 whitespace-nowrap'>{evidence.description}</td>
+          <td className='px-6 py-4 whitespace-nowrap'>{evidence.uploadedBy}</td>
+          <td className='px-6 py-4 whitespace-nowrap'>{evidence.uploadDate}</td>
+          <td className='px-6 py-4 whitespace-nowrap'>
+            {evidence.actions.map((action, index) => (
+              <button
+                key={index}
+                className='text-indigo-600 hover:text-indigo-900 mr-2'
+                onClick={() => action.action === 'View' ? handleViewEvidence(evidence.id) : handleDeleteEvidence(evidence.id)}
+              >
+                {action.action}
+              </button>
+            ))}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
         </div>
         {/* Pagination */}
         <div className='flex justify-end mt-4'>
