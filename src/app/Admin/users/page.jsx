@@ -17,7 +17,7 @@ const page = () => {
               <select
                 id='role'
                 name='role'
-                className='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+                className='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm'
               >
                 <option value=''>All Users</option>
                 <option value='admin'>Admin</option>
@@ -34,7 +34,7 @@ const page = () => {
                 type='text'
                 id='search'
                 name='search'
-                className='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm max-w-32'
+                className='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm max-w-32'
                 placeholder='Search users...'
               />
             </div>

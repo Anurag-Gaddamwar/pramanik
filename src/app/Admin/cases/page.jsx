@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 
 const CasesPage = () => {
   return (
-    <div className='lg:ml-64 ml-16 md:ml-64'>
+    <div className='lg:ml-64 ml-16 md:ml-64 text-sm'>
       <Navbar />
       <div className='mx-4 md:mx-8 lg:mx-16'>
         <h1 className='text-2xl font-bold mb-4 pt-5'>Cases</h1>
@@ -18,7 +18,7 @@ const CasesPage = () => {
               <select
                 id='filter'
                 name='filter'
-                className='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+                className='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm'
               >
                 <option value=''>All Cases</option>
                 <option value='open'>Open Cases</option>
@@ -33,7 +33,7 @@ const CasesPage = () => {
                 type='text'
                 id='search'
                 name='search'
-                className='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+                className='border max-w-28 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm'
                 placeholder='Search cases...'
               />
             </div>
@@ -68,7 +68,7 @@ const CasesPage = () => {
             </table>
           </div>
           {/* Pagination */}
-          <div className='flex justify-end mt-4'>
+          <div className='flex justify-center mt-4 '>
             <nav className='relative z-0 inline-flex rounded-md shadow-sm -space-x-px' aria-label='Pagination'>
               <a href='#' className='relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50'>
                 Previous

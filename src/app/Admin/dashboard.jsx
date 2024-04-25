@@ -4,14 +4,14 @@ import { UsersIcon, FolderIcon, ExclamationCircleIcon, ArchiveIcon } from '@hero
 
 const Dashboard = () => {
   return (
-    <div className='mobile lg:ml-64 ml-16 md:ml-64'>
+    <div className='mobile text-sm lg:ml-64 ml-16 md:ml-64'>
       <Navbar />
       <div className='font-bold'>
         <h1 className='pt-5 mb-3 pl-1 text-xl'>Dashboard</h1>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
         {/* Client Card */}
-        <div className='cursor-pointer border border-gray-300 rounded-lg p-6 shadow-xl flex items-center bg-white'>
+        <div className='cursor-pointer border border-gray-300 rounded-lg p-6 shadow-xl flex bg-white'>
           <UsersIcon className='h-10 w-10 text-teal-500 mr-4 flex-shrink-0' />
           <div>
             <h3 className='text-lg font-semibold mb-1'>Clients</h3>
@@ -19,8 +19,8 @@ const Dashboard = () => {
           </div>
         </div>
         {/* Cases Card */}
-        <div className='cursor-pointer border border-gray-300 rounded-lg p-6 shadow-xl flex  bg-white'>
-          <FolderIcon className='h-10 w-10 text-teal-500 mr-4 flex-shrink-0' />
+        <div className='cursor-pointer border border-gray-300 rounded-lg p-6 shadow-xl flex bg-white'>
+          <FolderIcon className='h-10 w-10 text-teal-500 mr-4  flex-shrink-0' />
           <div>
             <h3 className='text-lg font-semibold mb-1'>Cases</h3>
             <p className='text-sm text-gray-500'>View and manage cases</p>
