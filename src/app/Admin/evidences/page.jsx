@@ -215,10 +215,10 @@ const Page = () => {
         {/* Action log */}
         <div className='mt-8'>
           <h2 className='text-lg font-semibold mb-2'>Action Log</h2>
-          <div className='bg-gray-100 p-4 shadow-md rounded-lg'>
+          <div className='bg-gray-100 p-4 shadow-xl rounded-lg'>
             {actionLog.map((log, index) => (
               <div key={index} className='mb-2'>
-                <p className='text-sm text-gray-700 mb-1'>{log.action}</p>
+                <p className='text-sm text-gray-700 mb-1 '>{log.action}</p>
                 <p className='text-xs text-gray-500'>{log.timestamp} - {log.date}</p>
               </div>
             ))}
