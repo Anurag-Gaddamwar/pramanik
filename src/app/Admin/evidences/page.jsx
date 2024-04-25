@@ -120,7 +120,7 @@ const Page = () => {
   const currentItems = filteredEvidenceData.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <div className='lg:ml-64 ml-16 md:ml-64'>
+    <div className='lg:ml-64 ml-16 md:ml-64 text-sm'>
       <Navbar />
       <div className='mx-4 md:mx-8 lg:mx-16'>
         <h1 className='text-2xl font-bold mb-4 pt-5'>Evidence</h1>
@@ -144,7 +144,7 @@ const Page = () => {
             <input
               type='text'
               placeholder='Search...'
-              className='px-2 py-1 border border-gray-300 rounded-md focus:outline-none'
+              className='px-2 py-1 text-sm border max-w-28 border-gray-300 rounded-md focus:outline-none'
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
             />

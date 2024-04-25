@@ -34,8 +34,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`relative flex ${isMenuOpen ? 'open' : ''}`} ref={navbarRef}>
-      <div className={`bg-teal-700 text-white shadow-lg h-full flex flex-col fixed left-0 top-0 bottom-0 z-50 transition-all duration-300 ${isMenuOpen ? 'w-64' : 'w-14 lg:w-64 md:w-64'}`}>
+    <nav className={`text-sm relative flex ${isMenuOpen ? 'open' : ''}`} ref={navbarRef}>
+      <div className={`bg-teal-700 text-white shadow-lg h-full flex flex-col text-sm fixed left-0 top-0 bottom-0 z-50 transition-all duration-300 ${isMenuOpen ? 'w-64' : 'w-14 lg:w-64 md:w-64'}`}>
         {/* Navbar Header */}
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="md:hidden cursor-pointer mt-4" onClick={toggleMenu}>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <Link href="/">
               <div className="flex items-center py-2 px-4 w-64 mt-5 hover:bg-teal-800 transition ease-in-out duration-200">
                 <HomeIcon className="h-5 w-5 mr-2 " />
-                <p className="text-sm font-medium">Dashboard</p>
+                <p className="text-sm ">Dashboard</p>
               </div>
             </Link>
           </li>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <Link href="/Admin/cases">
               <div className="flex items-center py-2 px-4 w-64 mt-5 hover:bg-teal-800 transition ease-in-out duration-200">
               <FolderIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Cases</p>
+                <p className="text-sm ">Cases</p>
               </div>
             </Link>
           </li>
@@ -81,7 +81,7 @@ const Navbar = () => {
             <Link href="/Admin/users">
               <div className="flex items-center py-2 px-4 w-64 mt-5 hover:bg-teal-800 transition ease-in-out duration-200">
                 <UserIcon className="h-5 w-5 mr-2 " />
-                <p className="text-sm font-medium">Users</p>
+                <p className="text-sm ">Users</p>
               </div>
             </Link>
           </li>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <Link href="/Admin/evidences">
               <div className="flex items-center py-2 px-4 w-64 mt-5 hover:bg-teal-800 transition ease-in-out duration-200">
                 <CollectionIcon className="h-5 w-5 mr-2 " />
-                <p className="text-sm font-medium">Evidences</p>
+                <p className="text-sm ">Evidences</p>
               </div>
             </Link>
           </li>
@@ -97,7 +97,7 @@ const Navbar = () => {
             <Link href="/Admin/settings">
               <div className="flex items-center py-2 px-4 w-64 mt-5 hover:bg-teal-800 transition ease-in-out duration-200">
                 <CogIcon className="h-5 w-5 mr-2 " />
-                <p className="text-sm font-medium">Settings</p>
+                <p className="text-sm ">Settings</p>
               </div>
             </Link>
           </li>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <Link href="/">
               <div className="flex items-center py-2 px-4 w-64 hover:bg-teal-800 transition ease-in-out duration-200">
                 <HomeIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Dashboard</p>
+                <p className="text-sm ">Dashboard</p>
               </div>
             </Link>
           </li>
@@ -117,7 +117,7 @@ const Navbar = () => {
             <Link href="/Admin/cases">
               <div className="flex items-center py-2 px-4 w-64 hover:bg-teal-800 transition ease-in-out duration-200">
                 <FolderIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Cases</p>
+                <p className="text-sm ">Cases</p>
               </div>
             </Link>
           </li>
@@ -125,7 +125,7 @@ const Navbar = () => {
             <Link href="/Admin/users">
               <div className="flex items-center py-2 px-4 w-64 hover:bg-teal-800 transition ease-in-out duration-200">
                 <UserIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Users</p>
+                <p className="text-sm ">Users</p>
               </div>
             </Link>
           </li>
@@ -133,7 +133,7 @@ const Navbar = () => {
             <Link href="/Admin/evidences">
               <div className="flex items-center py-2 px-4 w-64 hover:bg-teal-800 transition ease-in-out duration-200">
                 <CollectionIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Evidences</p>
+                <p className="text-sm ">Evidences</p>
               </div>
             </Link>
           </li>
@@ -141,7 +141,7 @@ const Navbar = () => {
             <Link href="/Admin/settings">
               <div className="flex items-center py-2 px-4 w-64 hover:bg-teal-800 transition ease-in-out duration-200">
                 <CogIcon className="h-5 w-5 mr-2" />
-                <p className="text-sm font-medium">Settings</p>
+                <p className="text-sm ">Settings</p>
               </div>
             </Link>
           </li>
