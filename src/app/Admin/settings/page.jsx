@@ -125,7 +125,7 @@ const SettingsPage = () => {
   };
 
   return (
-    <div className='lg:ml-64 ml-16 md:ml-64'>
+    <div className='min-h-screen lg:ml-64 ml-16 md:ml-64'>
       <Navbar />
       <div className=' mx-4 md:mx-8 lg:mx-16'>
         <h1 className='text-2xl font-bold mb-4 pt-5'>Settings</h1>

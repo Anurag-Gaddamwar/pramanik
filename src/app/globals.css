@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@media screen and (max-width:450px){
+  .mobile{
+    max-width:20rem;
+  }
+}

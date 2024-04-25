@@ -134,8 +134,8 @@ const Page = () => {
               onChange={(e) => handleFilter(e.target.value)}
             >
               <option value='all'>All</option>
-              <option value='Category A'>Category A</option>
-              <option value='Category B'>Category B</option>
+              <option value='Category A'>Crime</option>
+              <option value='Category B'>Civil</option>
               {/* Add more options as needed */}
             </select>
           </div>

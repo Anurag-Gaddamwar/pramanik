@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 
 const page = () => {
   return (
-    <div className='lg:ml-64 ml-16 md:ml-64'>
+    <div className=' min-h-screen lg:ml-64 ml-16 md:ml-64'>
       <Navbar />
       <div className='mx-4 md:mx-8 lg:mx-16'>
         <h1 className='text-2xl font-bold mb-4 pt-5'>Users</h1>
@@ -34,7 +34,7 @@ const page = () => {
                 type='text'
                 id='search'
                 name='search'
-                className='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+                className='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm max-w-32'
                 placeholder='Search users...'
               />
             </div>
