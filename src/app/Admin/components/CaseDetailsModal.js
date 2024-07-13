@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // CaseDetailsModal.js
 
+=======
+>>>>>>> 6091872 (Styling changes in dashboard)
 import React from 'react';
 
 const CaseDetailsModal = ({ caseData, onClose }) => {
